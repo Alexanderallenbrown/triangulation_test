@@ -1,0 +1,13 @@
+
+
+<launch>
+
+<node type="ball_publisher.py" pkg="triangulation_test" name="ballSim"/>
+
+<node type="camera_sim_node.py" pkg="triangulation_test" name="simcam"/>
+
+<node type="measure_ball_node.py" pkg="triangulation_test" name="measureball"/>
+
+<node type="rviz" pkg="rviz" name="rviz" args="-d $(find triangulation_test)/rviz/ballsim.rviz"/>
+
+</launch>

@@ -10,8 +10,7 @@
 import roslib
 import rospy
 from numpy import *
-roslib.load_manifest('fishgantry_ros')
-from fishgantry_ros.msg import FishCommandMsg
+roslib.load_manifest('triangulation_test')
 import tf
 from geometry_msgs.msg import *
 from visualization_msgs.msg import *
